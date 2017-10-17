@@ -24,14 +24,14 @@
     e.preventDefault();
   });
   // Scroll to top button appear
-  $(document).scroll(function() {
+  /*$(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
       $('.scroll-to-top').fadeIn();
     } else {
       $('.scroll-to-top').fadeOut();
     }
-  });
+  });*/
   // Configure tooltips globally
   $('[data-toggle="tooltip"]').tooltip()
   // Smooth scrolling using jQuery easing
@@ -42,4 +42,10 @@
     }, 1000, 'easeInOutExpo');
     event.preventDefault();
   });
+  $( document ).ready(function() {
+    
+    $('body.sticky-footer .content-wrapper').css('min-height',$('#exampleAccordion').height()-56);
+    $('#details-loan').css('min-height',$('.loan-name').height());
+});
+  
 })(jQuery); // End of use strict
