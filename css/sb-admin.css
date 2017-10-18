@@ -119,7 +119,8 @@ body.fixed-nav {
       margin-top: 56px; }
       #mainNav .navbar-collapse .navbar-sidenav > .nav-item {
         width: 202px; /* edits 250px */
-        padding: 0; }
+        padding: 0;
+        font-size: 12px; }
         #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
           padding: 1em; }
         #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
@@ -517,6 +518,97 @@ footer.sticky-footer
 
   font-weight: 400;
 }
+.compexec{
+  position: relative;
+}
+.compexec span
+{
+  background-color: #fff;
+  padding: 0 10px 0 0px;
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 20px;
+}
+.compexec strong 
+{
+  color:   #0063fc;
+}
+.tiny_btn
+{
+  padding: 0.2rem 0.5rem;
+}
+.text-secundary
+{
+  color:  #9ca3aa !important;
+}
+.ghost-secundary
+{
+  border-radius: 4px;
+  border: solid 1px #9ca3aa;
+  /*font-family: MuseoSans;*/
+  font-size: 14px;
+  line-height: 1.25;
+
+}
+.margin15top
+{
+  margin-top: 15px;
+}
+.twopxborder
+{
+  border-width: 2px;
+}
+#main_space
+{
+  padding: 20px 5px;
+}
+.compexec::after
+{
+  display: block;
+  content: "";
+  margin-top: -2px;
+  position: relative;
+  top: -7px;
+  background: #e5e9ec;
+  width: 100%;
+  height: 1px;
+
+}
+.stats-container
+{
+  border-bottom: 1px #e3e3e3 solid;
+  padding-bottom: 10px;
+}
+.stats-container p{
+  margin-bottom: 2px;
+}
+.review-d, .link-to-faq
+{
+  font-size: 11px;
+}
+.pxr-0
+{
+  padding-right: 0px !important;
+}
+.link-to-faq a
+{
+  text-decoration: underline;
+  color: #9ca3aa;
+}
+.status
+{
+  font-weight: 500;
+}
+.link-to-faq a:hover
+{
+  color: #86898D
+}
+.failure
+{
+  color: #ce3768;
+}
 @media (min-width: 992px)
 {
   .topbar-li-menu
@@ -527,4 +619,41 @@ footer.sticky-footer
   {
     padding: 0.5rem 1rem;
   }
+}
+
+/* -------progress-------- */
+.chart {
+  position:relative;
+  width:56px;
+  height:56px;
+  /*margin: 0 auto;*/
+  font-family: 'Titillium web';
+  font-weight: 300 ;
+
+}
+canvas {
+  display: block;
+  position:absolute;
+  top:0;
+  left:0;
+}
+span.innermsjgood {
+  color:#08ac88;
+  display:block;
+  line-height:56px;
+  text-align:center;
+  width:56px;
+  font-size:20px;
+  font-weight:300;
+  margin-left:1px;
+}
+span.innermsjbad {
+  color:#ce3768;
+  display:block;
+  line-height:56px;
+  text-align:center;
+  width:56px;
+  font-size:20px;
+  font-weight:300;
+  margin-left:1px;
 }
