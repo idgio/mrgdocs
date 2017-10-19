@@ -129,6 +129,58 @@
               <span class="nav-link-text">Release of Lien</span>
             </a>
           </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text">Title Co/ Settlement Agent</span>
+              </a>
+            </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text">Lender Fees</span>
+              </a>
+            </li>
+  
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text">Lender Other Fees</span>
+              </a>
+            </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text">Broker Fees</span>
+              </a>
+            </li>
+          <li class="nav-item nav-error" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text">Broker Other Fees</span>
+              </a>
+            </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Aggregate</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text">Aggregate Itemized</span>
+              </a>
+            </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text">Settlement Fees</span>
+              </a>
+            </li>
+  
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text">Settlement Other Fees</span>
+              </a>
+            </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="#">
+                <span class="nav-link-text failure_label">Errors (7)</span>
+              </a>
+            </li>
         <div class="compilance_box">
           <a href="#" class="custom_nav_compilance">View Compliance Test</a>
           <div class="nav_custom_btn">
@@ -210,7 +262,7 @@
                         </div>
                         
                       </figure>
-
+                      <span class="porc_data success_d"> <p>75%</p> of tests failed</span>
                 </div>
                 <div class="col-3">
                     <figure >
@@ -218,9 +270,96 @@
                     </div>
                     
                   </figure>
+                  <span class="porc_data failure_d"> <p>25%</p> of tests failed</span>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-3">
+                  <img src="assets/images/warning.png" class="img-fluid float-left" alt="warning">
+                  <span class="porc_data warning_d"> <p>12</p> fields in question</span>
+                </div>
               </div>
+            <div class="row py-3">
+              <div class="col-3 pxl-0">
+                <div class="details_test">
+                  <h4 class="failure_test"><i class="fa fa-times" aria-hidden="true"></i> HOEPA Test <a class="float-right link_gray" href="#">details</a></h4>
+                  <div class="progress">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="success_test"><i class="fa fa-check" aria-hidden="true"></i>Rate Check <a class="float-right link_gray" href="#">details</a></p>
+                  <p class="success_test"><i class="fa fa-check" aria-hidden="true"></i>Prepayment Penalty Check <a class="float-right link_gray" href="#">details</a></p>
+                  <p class="failure_test"><i class="fa fa-times" aria-hidden="true"></i>Points & Fees Check <a class="float-right link_gray" href="#">details</a></p>
+                </div>
+                <div class="details_test">
+                    <h4 class="na_test"> <span>N/A</span> FNMA ATR Exempt Test <a class="float-right link_gray" href="#">details</a></h4>
+                  </div>
+                <div class="details_test">
+                    <h4 class="failure_test"><i class="fa fa-times" aria-hidden="true"></i> State High Cost Test <a class="float-right link_gray" href="#">details</a></h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="success_test"><i class="fa fa-check" aria-hidden="true"></i>Rate Check <a class="float-right link_gray" href="#">details</a></p>
+                    
+                    <p class="failure_test"><i class="fa fa-times" aria-hidden="true"></i>Points & Fees Check <a class="float-right link_gray" href="#">details</a></p>
+                  </div>
+                  <div class="details_test">
+                      <h4 class="success_test"><i class="fa fa-check" aria-hidden="true"></i> Initial APR Test <a class="float-right link_gray" href="#">details</a></h4>
+                      <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                <div class="details_test">
+                    <h4 class="success_test"><i class="fa fa-check" aria-hidden="true"></i> Federal HPM Test
+                      
+                       <a class="float-right link_gray" href="#">details</a></h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                <div class="details_test">
+                    <h4 class="failure_test"><i class="fa fa-times" aria-hidden="true"></i> Qualified Mortgage Test <a class="float-right link_gray" href="#">details</a></h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="success_test"><i class="fa fa-check" aria-hidden="true"></i>Rate Check <a class="float-right link_gray" href="#">details</a></p>
+                    
+                    <p class="failure_test"><i class="fa fa-times" aria-hidden="true"></i>Points & Fees Check <a class="float-right link_gray" href="#">details</a></p>
+                  </div>
+                <div class="details_test">
+                    <h4 class="na_test"> <span>N/A</span> Texas Home Equity 3% Test <a class="float-right link_gray" href="#">details</a></h4>
+                  </div>
+                
+              </div>
+              <div class="col-6 sub_data_details"  >
+                <div class="my_data active" id="sub_data_details_0">
+                    <h4 class="text-uppercase">SECTION 32 PREPAYMENT PENALTY TEST <span class="float-right sucess_label">PASS</span></h4>
+                    <div class="sub_more_detail"> <span class="float-left">Prepayment Penalty Term</span> <span class="float-right">N/A - (may not exceed 36 months)</span> </div>
+                    <div class="sub_more_detail"> <span class="float-left">Prepayment Penalty Percent</span> <span class="float-right">N/A - (may not exceed 2%)</span> </div>
+                    <div class="sub_more_detail"> <span class="float-left">Prepayment Penalty Amount</span> <span class="float-right"> N/A - (may not exceed $3,408.90)</span> </div>
+                </div>
+                <div class="my_data" id="sub_data_details_1">
+                    <h4 class="text-uppercase">SECTION 32 PREPAYMENT PENALTY TEST <span class="float-right sucess_label">PASS</span></h4>
+                    <div class="sub_more_detail"> <span class="float-left">Prepayment Penalty Term</span> <span class="float-right">N/A - (may not exceed 36 months)</span> </div>
+                    <div class="sub_more_detail"> <span class="float-left">Prepayment Penalty Percent</span> <span class="float-right">N/A - (may not exceed 2%)</span> </div>
+                    <div class="sub_more_detail"> <span class="float-left">Prepayment Penalty Amount</span> <span class="float-right"> N/A - (may not exceed $3,408.90)</span> </div>
+                </div>
+              </div>
+              <div class="col-3 pxr-0">
+                <div class="notes">
+                    <strong>Notes</strong>
+                    <p>
+                        A transaction is a high-cost mortgage if the transaction provides for prepayment fees and penalties that
+                      </p>   <p>    
+                        (1) may be imposed more than 36 months after consummation or account opening or 
+                      </p>   <p>      
+                        (2) exceed, in the aggregate, more than 2% of the amount prepaid.
+                    </p>
+                    
+                    
+                    <p>READ:</p> 
+                    
+                    <a class="link" href="#">Why test fails in MRG and not others</a> 
+                </div>
+              </div>
+            </div>
       </div>
       
     </div>
