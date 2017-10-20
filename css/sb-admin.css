@@ -488,11 +488,12 @@ footer.sticky-footer
 {
   background-color: #e5e9ec;  
   margin-top: 2rem;
+  
 }
 .nav_custom_btn > .full-btn
 {
   margin: 0.8rem 0rem;
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 1.1rem;
 }
 .custom_nav_compilance, .custom_nav_compilance:hover {
   background-color: #397de8;
@@ -763,10 +764,48 @@ p.success_test i
 {
   display: none;
 }
-.active
-{
-  display: block;
+
+label , select, input{
+  font-size: 12px !important;
+  color: #445963;
+  
 }
+label{
+  font-weight: 500;
+}
+select, input
+{
+  padding: .3rem .75rem !important;
+  min-height: 32px !important;
+  max-height: 32px !important;
+  border-radius: 4px!important;
+  border: solid 1px #9ca3aa!important;
+}
+select:hover, input:hover, select:focus, input:hover
+{
+  border: solid 1px #445963 !important;
+}
+.form-check-input
+{
+  min-height: 0px !important;
+  max-height: 32px !important;
+}
+.input-group-addon {
+  padding: .3rem .75rem;
+}
+input.error
+{
+  background-color: rgba(206, 55, 104, 0.1) !important;
+  border: solid 1px #ce3768!important;
+  color: #ce3768 !important;
+}
+input.disabled
+{
+  background-color: #e5e9ec !important;
+  border: solid 1px #9ca3aa !important;
+  color: #9ca3aa !important;
+}
+
 @media (min-width: 992px)
 {
   .topbar-li-menu
@@ -777,6 +816,10 @@ p.success_test i
   {
     padding: 0.3rem 1rem;
   }
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
+    color: white !important;
+    background-color: #3a7de8;
+}
 }
 
 /* -------progress-------- */
@@ -818,4 +861,11 @@ span.innermsjbad {
 figure
 {
   float: left;
+}
+.divider
+{
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px solid #e5e9ec;
+  margin-bottom: 0.5rem;
 }

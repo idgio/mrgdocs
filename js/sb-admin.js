@@ -46,7 +46,12 @@
     
     $('body.sticky-footer .content-wrapper').css('min-height',$('#exampleAccordion').height()-56);
     $('#details-loan').css('min-height',$('.loan-name').height());
-
+    if($('#main_space').height() > $('#exampleAccordion').height() )
+    {
+      $('#exampleAccordion').height($('#main_space').outerHeight()+56);
+      $(".compilance_box").css('position', 'absolute');
+      $(".compilance_box").css('bottom', '0');
+    }
     var el;
     var options;
     var canvas;
@@ -117,8 +122,13 @@
 
 
     };
-    drawNewGraph('graph1');
-    drawNewGraph('graph2');
+    try {
+      drawNewGraph('graph1');
+      drawNewGraph('graph2');
+    } catch (error) {
+      console.log(error);
+    }
+    
 
 });
   
