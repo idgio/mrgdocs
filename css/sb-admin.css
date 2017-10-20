@@ -489,7 +489,7 @@ footer.sticky-footer
 {
   background-color: #e5e9ec;  
   margin-top: 2rem;
-  
+  width: 100%;
 }
 .nav_custom_btn > .full-btn
 {
