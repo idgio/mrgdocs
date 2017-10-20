@@ -438,6 +438,7 @@ footer.sticky-footer
 {
   background-color: #445063;
   position: relative;
+  line-height: 22.5px;
 }
 .loan-name a > span{
   color: #ffffff;
@@ -663,7 +664,7 @@ span.porc_data {
 }
 .details_test
 {
-  padding-left: 15px;
+  padding-left: 10px;
   padding-bottom: 15px;
   padding-top: 15px;
   border-bottom: 1px #e3e3e3 solid;
@@ -760,10 +761,7 @@ p.success_test i
   color: #002d73!important;
   font-weight: 500;
 }
-.my_data
-{
-  display: none;
-}
+
 
 label , select, input{
   font-size: 12px !important;
@@ -868,4 +866,8 @@ figure
   display: inline-block;
   border-bottom: 1px solid #e5e9ec;
   margin-bottom: 0.5rem;
+}
+.pxr-1
+{
+  padding-right: 7.5px !important;
 }

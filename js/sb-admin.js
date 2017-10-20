@@ -43,7 +43,7 @@
     event.preventDefault();
   });
   $( document ).ready(function() {
-    
+    $('#sub_data_details_1').fadeOut(0);
     $('body.sticky-footer .content-wrapper').css('min-height',$('#exampleAccordion').height()-56);
     $('#details-loan').css('min-height',$('.loan-name').height());
     if($('#main_space').height() > $('#exampleAccordion').height() )
@@ -52,6 +52,16 @@
       $(".compilance_box").css('position', 'absolute');
       $(".compilance_box").css('bottom', '0');
     }
+    $('a[href="#ratecheck"]').click(function(){
+      $('#sub_data_details_1').fadeIn(300);
+      $('#sub_data_details_0').fadeOut(0);
+      
+    });
+    $('a[href="#ratetest"]').click(function(){
+      $('#sub_data_details_0').fadeIn(300);
+      $('#sub_data_details_1').fadeOut(0);
+      
+    });
     var el;
     var options;
     var canvas;
