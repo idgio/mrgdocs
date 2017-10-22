@@ -369,20 +369,7 @@ footer.sticky-footer
 {
   margin-top: 88px;
 }
-.topbar-search
-{
-  margin-right: 4px;
-  border-radius: 4px;
-  background-color: #1f4b8f;
-  border-color: transparent;
-  color: #fff;
-}
-.topbar-search:focus {
-  color: #fff;
-  background-color: #1f4b8f;
-  border-color: transparent;
-  outline: 0;
-}
+
 .topbar-search-btn
 {
   border-radius: 4px !important;
@@ -485,7 +472,7 @@ footer.sticky-footer
 .solid-primary:hover{
   color: #F3F3F3;
 }
-.compilance_box
+.compilance_box                                                                
 {
   background-color: #e5e9ec;  
   margin-top: 2rem;
@@ -494,7 +481,7 @@ footer.sticky-footer
 .nav_custom_btn > .full-btn
 {
   margin: 0.8rem 0rem;
-  padding: 0.8rem 1.1rem;
+  padding: 0.8rem 0.5rem;
 }
 .custom_nav_compilance, .custom_nav_compilance:hover {
   background-color: #397de8;
@@ -561,7 +548,7 @@ footer.sticky-footer
 }
 .twopxborder
 {
-  border-width: 3px;
+  border-width: 2px;
 }
 #main_space
 {
@@ -729,6 +716,15 @@ p.failure_test i
 {
   padding-left: 0px !important;
 }
+img.icon-result {
+  max-width: 25px;
+  margin-top: -5px;
+}
+.icon-result-ex
+{
+  max-width: 17px;
+  margin-top: -5px;
+}
 p.success_test i
 {
   color:#08ac88;
@@ -845,6 +841,7 @@ span.innermsjgood {
   font-size:20px;
   font-weight:300;
   margin-left:1px;
+  padding-top: 2px;
 }
 span.innermsjbad {
   color:#ce3768;
@@ -855,6 +852,7 @@ span.innermsjbad {
   font-size:20px;
   font-weight:300;
   margin-left:1px;
+  padding-top: 1px;
 }
 figure
 {
@@ -871,3 +869,107 @@ figure
 {
   padding-right: 7.5px !important;
 }
+.topbar-search
+{
+  margin-right: 4px;
+  border-radius: 4px !important;
+  background-color: #1f4b8f;
+  border-color: transparent !important;
+  color: #fff;
+  min-height: 36px !important;
+  min-width: 272px!important;
+}
+.topbar-search:focus,.topbar-search:hover {
+  color: #fff;
+  background-color: #1f4b8f;
+  border-color: transparent !important;
+  outline: 0;
+}
+.fa-check-25:before
+{
+  content:url("../assets/images/check-25.png");
+  width: 25px;
+  height: 19px;
+  display: inline-block;
+}
+.fa-ex-17:before
+{
+  content:url("../assets/images/ex-17.png");
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+.fa-ex-16:before
+{
+  content:url("../assets/images/ex-16.png");
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+}
+.fa-ex-12:before
+{
+  content:url("../assets/images/ex-12.png");
+  width: 11px;
+  height: 8px;
+  display: inline-block;
+}
+.fa-check-21:before
+{
+  content:url("../assets/images/check-21.png");
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+}
+.fa-check-12:before
+{
+  content:url("../assets/images/check-12.png");
+  width: 11px;
+  height: 8px;
+  display: inline-block;
+}
+.fa-calendar:before
+{
+  content:url("../assets/images/calendar.png");
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+#exampleAccordion
+{
+  max-width: 200px;
+}
+.gj-datepicker input
+{
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-right-width: 0px !important;
+}
+.gj-datepicker .input-group-addon
+{
+  border-left-width: 0px !important;
+  background-color: white!important;
+  border-color: #9ca3aa!important;
+}
+.gj-datepicker .error + .input-group-addon
+{
+  background-color: #faebf0!important;
+  border-color: #ce3768!important;
+}
+input:hover + .input-group-addon,  input:hover + .input-group-addon
+{
+  border-color: #445963 !important;
+}
+@media (min-width: 1200px)
+{
+.container {
+    max-width: 100%;
+}
+}
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after, #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown.show > .nav-link:after
+{
+  content:url("../assets/images/down-arrow-light.png");
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+

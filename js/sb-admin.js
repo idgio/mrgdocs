@@ -43,9 +43,10 @@
     event.preventDefault();
   });
   $( document ).ready(function() {
-    $('#sub_data_details_1').fadeOut(0);
+    $('#sub_data_details_0').fadeOut(0);
+    $('#notes0').fadeOut(0);
     $('body.sticky-footer .content-wrapper').css('min-height',$('#exampleAccordion').height()-56);
-    $('#details-loan').css('min-height',$('.loan-name').height());
+    $('#details-loan').css('max-height',$('.loan-name').outerHeight());
     if($('#main_space').height() > $('#exampleAccordion').height() )
     {
       $('#exampleAccordion').height($('#main_space').outerHeight()+56);
@@ -55,12 +56,14 @@
     $('a[href="#ratecheck"]').click(function(){
       $('#sub_data_details_1').fadeIn(300);
       $('#sub_data_details_0').fadeOut(0);
-      
+      $('#notes1').fadeIn(300);
+      $('#notes0').fadeOut(0);
     });
     $('a[href="#ratetest"]').click(function(){
       $('#sub_data_details_0').fadeIn(300);
       $('#sub_data_details_1').fadeOut(0);
-      
+      $('#notes0').fadeIn(300);
+      $('#notes1').fadeOut(0);
     });
     var el;
     var options;
@@ -88,12 +91,12 @@
         if(options.percent >= 50)
         {
           span.className = 'innermsjgood';
-          span.innerHTML = '<i class="fa fa-check" aria-hidden="true"></i>';
+          span.innerHTML = '<i class="fa fa-check-25" aria-hidden="true"></i>';
         }
         else
         {
           span.className = 'innermsjbad';
-          span.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>'
+          span.innerHTML = '<i class="fa fa-ex-17" aria-hidden="true"></i>'
         }
         
 
