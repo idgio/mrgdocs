@@ -46,12 +46,12 @@
     $('#sub_data_details_0').fadeOut(0);
     $('#notes0').fadeOut(0);
     $('body.sticky-footer .content-wrapper').css('min-height',$('#exampleAccordion').height()-56);
-    $('#details-loan').css('max-height',$('.loan-name').outerHeight());
+    $('#details-loan').css('height',$('.loan-name').outerHeight());
     if($('#main_space').height() > $('#exampleAccordion').height() )
     {
       $('#exampleAccordion').height($('#main_space').outerHeight()+56);
-      $(".compilance_box").css('position', 'absolute');
-      $(".compilance_box").css('bottom', '0');
+      /*$(".compilance_box").css('position', 'absolute');
+      $(".compilance_box").css('bottom', '0');*/
     }
     $('a[href="#ratecheck"]').click(function(){
       $('#sub_data_details_1').fadeIn(300);

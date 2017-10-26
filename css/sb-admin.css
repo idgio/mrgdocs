@@ -8,7 +8,9 @@ html {
   min-height: 100%; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+  font-family: MuseoSans;
+}
 
 body.sticky-footer {
   margin-bottom: 56px; }
@@ -103,7 +105,8 @@ body.fixed-nav {
 
 @media (min-width: 992px) {
   #mainNav .navbar-brand {
-    width: 200px; /* edits 250px */}
+    width: 200px;
+     /* edits 250px */}
   #mainNav .navbar-collapse {
     overflow: visible;
     max-height: none; }
@@ -118,7 +121,7 @@ body.fixed-nav {
       flex-direction: column;
       margin-top: 56px; }
       #mainNav .navbar-collapse .navbar-sidenav > .nav-item {
-        width: 202px; /* edits 250px */
+        width: 200px; /* edits 250px */
         padding: 0;
         font-size: 12px; }
         #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
@@ -386,7 +389,7 @@ footer.sticky-footer
   box-shadow: 0 0 0 1px rgba(0,123,255,.25);
 }
 .topbar-search-btn:hover{
-  background-color: #3068BD
+  background-color: #3a7de8;
 }
 .ghost-primary
 {
@@ -396,6 +399,10 @@ footer.sticky-footer
   font-size: 14px;
   line-height: 1.25;
   color: #3a7de8 ;
+}
+.ghost-primary:hover
+{
+  color: #2e69c7 !important;
 }
 .solid-primary
 {
@@ -471,11 +478,12 @@ footer.sticky-footer
 }
 .solid-primary:hover{
   color: #F3F3F3;
+  background-color: #3a7de8 !important;
 }
 .compilance_box                                                                
 {
-  background-color: #e5e9ec;  
-  margin-top: 2rem;
+  background-color: #f8f9fa;  
+  margin-top: 0.8rem;
   width: 100%;
 }
 .nav_custom_btn > .full-btn
@@ -484,18 +492,21 @@ footer.sticky-footer
   padding: 0.8rem 0.5rem;
 }
 .custom_nav_compilance, .custom_nav_compilance:hover {
-  background-color: #397de8;
-  color: #fff;
+  /*background-color: #397de8;*/
+  border-top: solid 1px #e5e9ec;
+  border-bottom: solid 1px #e5e9ec;
+  color: #445963;
   text-decoration: none;
   width: 100%;
   display: block;
   text-align: center;
   padding: 0.2rem 0.5rem;
+  font-size: 12px;
 }
 #details-loan 
 {
   background-color: #e5e9ec;
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
 }
 #details-loan  p
 {
@@ -806,6 +817,9 @@ input.disabled
   {
     left: -117px;
   }
+  .loan-name > a {
+    padding: 0.8rem 1rem !important;
+}
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link
   {
     padding: 0.3rem 1rem;
@@ -971,5 +985,9 @@ input:hover + .input-group-addon,  input:hover + .input-group-addon
   width: 14px;
   height: 14px;
   display: inline-block;
+}
+.navbar-brand img
+{
+  max-width: 150px;
 }
 
