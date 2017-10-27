@@ -58,12 +58,16 @@
       $('#sub_data_details_0').fadeOut(0);
       $('#notes1').fadeIn(300);
       $('#notes0').fadeOut(0);
+      $('.link_gray.active').removeClass('active');
+      $(this).addClass('active');
     });
     $('a[href="#ratetest"]').click(function(){
       $('#sub_data_details_0').fadeIn(300);
       $('#sub_data_details_1').fadeOut(0);
       $('#notes0').fadeIn(300);
       $('#notes1').fadeOut(0);
+      $('.link_gray.active').removeClass('active');
+      $(this).addClass('active');
     });
     var el;
     var options;

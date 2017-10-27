@@ -391,6 +391,16 @@ footer.sticky-footer
 .topbar-search-btn:hover{
   background-color: #3a7de8;
 }
+.link_gray.active
+{
+  color: #002d73!important;
+  font-weight: 500;
+}
+.custom_nav_compilance.active
+{
+  color: white !important;
+  background-color: #3a7de8;
+}
 .ghost-primary
 {
   border-radius: 4px;
