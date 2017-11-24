@@ -123,7 +123,7 @@ body.fixed-nav {
       #mainNav .navbar-collapse .navbar-sidenav > .nav-item {
         width: 200px; /* edits 250px */
         padding: 0;
-        font-size: 12px; }
+        font-size: 12px;  }
         #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
           padding: 1em; }
         #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
@@ -334,7 +334,8 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   max-width: 40rem; }
 
 footer.sticky-footer {
-  position: absolute;
+  /*position: absolute;*/
+  position: fixed;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -351,6 +352,22 @@ footer.sticky-footer {
 
 
 /* ---------- custom css --------------------- */
+.notes 
+{
+  display: none;
+}
+.notes.active
+{
+  display: block;
+}
+.dettl
+{
+  display: none;
+}
+.dettl.active
+{
+  display: block;
+}
 .bg-blue
 {
   background-color: #002d73;
@@ -443,9 +460,14 @@ footer.sticky-footer
   background-color: #445063;
   position: relative;
   line-height: 22.5px;
+  min-height: 60px;
+  
 }
+
 .loan-name a > span{
   color: #ffffff;
+  font-weight: 700; 
+  size: 16px;
 }
 .loan-name:after {
   left: 100%;
@@ -517,6 +539,7 @@ footer.sticky-footer
 {
   background-color: #e5e9ec;
   padding-top: 0.8rem;
+  min-height: 60px;
 }
 #details-loan  p
 {
@@ -631,6 +654,11 @@ span.porc_data {
   font-size: 11px;
   color: #9ca3aa;
 }
+.notes ul
+{
+  list-style-type: none;
+  padding-left: 2px;
+}
 .success_d > p
 {
   color:#08ac87;
@@ -640,6 +668,16 @@ span.porc_data {
 .sucess_label
 {
   color:#00b085;
+  font-weight: bold;
+}
+.fail_label
+{
+  color:#cf3768;
+  font-weight: bold;
+}
+.na_label
+{
+  color:#9ca3aa;
   font-weight: bold;
 }
 .failure_d > p

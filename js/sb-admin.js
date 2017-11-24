@@ -43,8 +43,7 @@
     event.preventDefault();
   });
   $( document ).ready(function() {
-    $('#sub_data_details_0').fadeOut(0);
-    $('#notes0').fadeOut(0);
+    
     $('body.sticky-footer .content-wrapper').css('min-height',$('#exampleAccordion').height()-56);
     $('#details-loan').css('height',$('.loan-name').outerHeight());
     if($('#main_space').height() > $('#exampleAccordion').height() )
@@ -53,22 +52,15 @@
       /*$(".compilance_box").css('position', 'absolute');
       $(".compilance_box").css('bottom', '0');*/
     }
-    $('a[href="#ratecheck"]').click(function(){
-      $('#sub_data_details_1').fadeIn(300);
-      $('#sub_data_details_0').fadeOut(0);
-      $('#notes1').fadeIn(300);
-      $('#notes0').fadeOut(0);
+    $('.link_gray').click(function(){
       $('.link_gray.active').removeClass('active');
+      $('.notes.active').fadeOut(0).removeClass('active');
+      $('.dettl.active').fadeOut(0).removeClass('active');
+      $($(this).attr('href')).fadeIn(300).addClass('active');
+      $('.notes[data-id="'+$(this).attr('href')+'"]').fadeIn(300).addClass('active');
       $(this).addClass('active');
     });
-    $('a[href="#ratetest"]').click(function(){
-      $('#sub_data_details_0').fadeIn(300);
-      $('#sub_data_details_1').fadeOut(0);
-      $('#notes0').fadeIn(300);
-      $('#notes1').fadeOut(0);
-      $('.link_gray.active').removeClass('active');
-      $(this).addClass('active');
-    });
+    
     var el;
     var options;
     var canvas;
