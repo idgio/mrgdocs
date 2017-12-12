@@ -45,7 +45,15 @@
   $( document ).ready(function() {
    
     $('body.sticky-footer .content-wrapper').css('min-height',$('#exampleAccordion').height()-56);
-    $('#details-loan').css('height',$('.loan-name').outerHeight());
+    if( $('#details-loan').outerHeight() <= $('.loan-name').outerHeight())
+    {
+      $('#details-loan').css('height',$('.loan-name').outerHeight());
+    }
+    else
+    {
+      $('.loan-name').css('height',$('#details-loan').outerHeight());
+    }
+    
     if($('#main_space').height() > $('#exampleAccordion').height() )
     {
       $('#exampleAccordion').height($('#main_space').outerHeight()+56);
